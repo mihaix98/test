@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1 class="title">Course Management</h1>
+    </header>
+    <main>
+        <section id="printedCoursesList" class="tab">
+            <!-- Courses printed here -->
+        </section>
+        <h1 id="welcomeMessage">Welcome, <br/>this is your courses control panel!</h1>
+        <section id="tabcontent">
+            <div class="informations">
+                <h1 id="viewCourseName"></h1>
+                <h1>Assigned teacher: <span id="assignedTeacher">No teacher</span></h1>
+            </div>
+            <table id="courseStudentListTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>First name</th>
+                        <th>Last name</th>
+                        <th>Gender</th>
+                        <th>Address</th>
+                        <th>Hobbies</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="content-table">
+                </tbody>
+            </table>
+            <div class="management-zone">
+                
+                <div class="dropdown">
+                    <button class="dropbtn">Add student to course</button>
+                    <div class="dropdown-content" id="dropDownStudentsMenu">
+                        <!-- Dropdown studets zone -->
+                    </div>
+                </div>
+                    <button id="createStudent">Create student</button>
+                <!-- Modal Create student -->
+                <div id="createStudentOpenModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2>Create student form</h2>
+                        </div>
+                        <form class="createStudentForm">
+                            <div class="modalBody">
+                                    <input class="form-input" type="text" name="firstName" placeholder="First Name">
+                                    <input class="form-input" type="text" name="lastName" placeholder="Last name">
+                                    <input class="form-check" type="radio" checked="checked" name="gender" value="M">M
+                                    <input class="form-check" type="radio" checked="checked" name="gender" value="F">F
+                                    <input class="form-input" type="text" name="address" placeholder="address">
+                                    <input class="form-input" type="text" name="hobbies" placeholder="hobbies">
+                            </div>
+                            <div class="modal-footer">
+                                <button id="createStudents" class="modalButtons">Create</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <script src="course-management/general_functions.js"></script>
+        <script src="course-management/contructors.js"></script>
+        <script src="course-management/event_delegation.js"></script>
+        <script src="course-management/api_call_dom_maipulations_functions.js"></script>
+        <script src="course-management/modal_functions.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,324 @@
+/* --- General config zone --- */
+body {
+  font-family: 'DM Serif Display', serif;
+  margin:0;
+  padding:0;
+}
+
+/* --- Header config zone --- */
+header{
+  background: rgb(15, 130, 165);
+}
+.title{
+  color: white;
+  text-align: center;
+  margin:0;
+  padding: 30px 0;
+}
+
+/* --- Main config zone --- */
+
+/* Welcome message */
+#welcomeMessage{
+  display: block;
+  text-align: center;
+  padding-top: 10%;
+  font-size: 50px;
+  
+}
+
+/* Style the tabs */
+.tab {
+  overflow: hidden;
+  background-color: rgb(41, 41, 41);
+}
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.5s;
+  font-size: 17px;
+}
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(31, 30, 30);
+}
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(15, 130, 165);
+}
+/* Style the tab content */
+#tabcontent {
+  display: none;
+  min-height: 90vh; /* Space for Dropdown Students Menu */
+  padding: 6px 12px;
+  border-top: none;
+}
+#tabcontent h1{
+  text-align: center;
+}
+/* -- Table style -- */
+main table{
+  margin: 10px auto;
+}
+main table td,th{
+  padding: 15px 20px;
+  font-size: 23px;
+  font-weight: 100;
+  border-radius: 5px;
+  text-align: center;
+}
+main table th{
+  background: rgb(15, 130, 165);
+  color: white;
+}
+main table img{
+  width: 20px;
+  cursor: pointer;
+}
+/* Content table delete button */
+#content-table button{
+  border: none;
+  background: transparent;
+}
+
+/* --- Management zone --- */
+.management-zone{
+  display: block;
+  max-width: 70%;
+  margin: auto;
+  text-align: right;
+}
+/* Create student button */
+#createStudent{
+  display: inline;
+  float: left;
+  background: rgb(15, 130, 165);
+  color: white;
+  font-size: 16px;
+  padding: 15px 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+#createStudent:hover{
+  opacity: 0.8;
+}
+
+/* -- Drowdown Student Menu -- */
+.dropbtn {
+  display: inline;
+  background-color: rgb(15, 130, 165);
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: 0.7s;
+}
+/* Dropdown case */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 150px;
+  /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+  z-index: 1;
+}
+.dropdown-content button {
+  width: 200px;
+  background: white;
+  color: Black;
+  border: 1px solid rgb(15, 130, 165);
+  border-radius: 10px;
+  padding: 15px 5px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  transition: 0.7s;
+}
+.dropdown-content button:hover {
+  background: rgb(15, 130, 165);
+  color: white;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  opacity: 0.8;
+}
+
+/* --- Modal Create Student --- */
+
+.modal {
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  text-align: center;
+  background-color: black; /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* The Close Button */
+.modalButtons{
+  display: inline;
+  background-color: rgb(15, 130, 165);
+  padding: 10px 15px;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px solid white;
+  transition: 0.7s;
+  cursor: pointer;
+}
+.modalButtons:hover{
+  background-color: white;
+  color: black;
+}
+/* Modal content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+.modal-header {
+  padding: 2px 10px;
+  background-color: rgb(15, 130, 165);
+  color: white;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 45px;
+  padding-right: 15px;
+  font-weight: bold;
+  transition: 0.7s;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modalBody {
+  padding: 50px 0px;
+  max-width: 200px;
+  margin: auto;
+}
+.modal-footer {
+  padding: 2px 16px;
+  background-color: rgb(15, 130, 165);
+  color: white;
+}
+.form-input{
+  display: block;
+  margin-bottom: 15px;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+.form-check{
+  margin: 25px 10px;
+}
+.modal-footer{
+  text-align: right;
+  padding: 15px;
+}
+
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+
+/* ----- Media queries ----- */
+
+/* Large devices (desktops, 768px-992px) */
+@media (max-width: 992px) {
+  main table td,th{
+    padding: 9px 14px;
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, 576-768px) */
+@media (max-width: 768px) {
+  #welcomeMessage{
+    font-size: 40px;
+  }
+  main table td,th{
+    padding: 5px 7px;
+    font-size: 14px;
+  }
+  .modal-content{
+    width: 70%;
+  }
+}
+
+/* Small devices (tablets, >576) */
+@media (max-width: 576px) {
+  #welcomeMessage{
+    font-size: 25px;
+  }
+  .modal-content{
+    width: 100%;
+  }
+  .modal-header h2{
+    font-size: 20px;
+  }
+  .informations h1{
+    font-size: 15px;
+  }
+  main table td,th{
+    padding: 3px 5px;
+    font-size: 10px;
+  }
+  main table img{
+    width: 15px;
+  }
+  .management-zone{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+  /* Create student button */
+  #createStudent{
+    display: block;
+    font-size: 15px;
+    padding: 15px 50px;
+  }
+  .dropdown{
+    display: block;
+    margin-bottom: 20px;
+  }
+  /* -- Drowdown Student Menu -- */
+  .dropbtn {
+    padding: 15px 20px;
+    font-size: 15px;
+  }
+}

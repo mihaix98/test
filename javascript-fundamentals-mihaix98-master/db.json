@@ -1,0 +1,179 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "history",
+      "assignedTeacher": "Andrea Barrett",
+      "studentList": [
+        {
+          "id": 2,
+          "firstName": "Martin33",
+          "lastName": "Lawrence33",
+          "gender": "M",
+          "address": "Str. Steco 95",
+          "hobbies": "BasketBall"
+        },
+        {
+          "id": 3,
+          "firstName": "Martin10",
+          "lastName": "Lawrence10",
+          "gender": "M",
+          "address": "Str. FIbro 35",
+          "hobbies": "Tenis"
+        },
+        {
+          "id": 4,
+          "firstName": "Jones",
+          "lastName": "Brones",
+          "gender": "M",
+          "address": "Str.Witness, Nr.5",
+          "hobbies": "American Football"
+        },
+        {
+          "address": "Str. Bldio 23",
+          "hobbies": "fotball",
+          "id": 1,
+          "firstName": "Martin3",
+          "lastName": "Lawrence3",
+          "gender": "M"
+        },
+        {
+          "address": "Str.Grozav Nr.5",
+          "hobbies": "Paintball",
+          "id": 6,
+          "firstName": "John",
+          "lastName": "Wick",
+          "gender": "M"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "english",
+      "assignedTeacher": "Andrea Barrett",
+      "studentList": [
+        {
+          "id": 2,
+          "firstName": "Martin33",
+          "lastName": "Lawrence33",
+          "gender": "M",
+          "address": "Str. Steco 95",
+          "hobbies": "BasketBall"
+        },
+        {
+          "id": 5,
+          "firstName": "Brightine",
+          "lastName": "Alexa",
+          "gender": "F",
+          "address": "Str.Oslo, Nr.75",
+          "hobbies": "SkateBoarding"
+        },
+        {
+          "address": "Str. FIbro 35",
+          "hobbies": "Tenis",
+          "id": 3,
+          "firstName": "Martin10",
+          "lastName": "Lawrence10",
+          "gender": "M"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "mathematics",
+      "assignedTeacher": "Jack Connor",
+      "studentList": [
+        {
+          "id": 1,
+          "firstName": "Martin3",
+          "lastName": "Lawrence3",
+          "gender": "M",
+          "address": "Str. Bldio 23",
+          "hobbies": "fotball"
+        },
+        {
+          "id": 2,
+          "firstName": "Martin33",
+          "lastName": "Lawrence33",
+          "gender": "M",
+          "address": "Str. Steco 95",
+          "hobbies": "BasketBall"
+        },
+        {
+          "id": 3,
+          "firstName": "Martin10",
+          "lastName": "Lawrence10",
+          "gender": "M",
+          "address": "Str. FIbro 35",
+          "hobbies": "Tenis"
+        },
+        {
+          "id": 4,
+          "firstName": "Jones",
+          "lastName": "Brones",
+          "gender": "M",
+          "address": "Str.Witness, Nr.5",
+          "hobbies": "American Football"
+        },
+        {
+          "address": "Str.Grozav Nr.5",
+          "hobbies": "Paintball",
+          "id": 6,
+          "firstName": "John",
+          "lastName": "Wick",
+          "gender": "M"
+        }
+      ]
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Martin3",
+      "lastName": "Lawrence3",
+      "gender": "M",
+      "address": "Str. Bldio 23",
+      "hobbies": "fotball"
+    },
+    {
+      "id": 2,
+      "firstName": "Martin33",
+      "lastName": "Lawrence33",
+      "gender": "M",
+      "address": "Str. Steco 95",
+      "hobbies": "BasketBall"
+    },
+    {
+      "id": 3,
+      "firstName": "Martin10",
+      "lastName": "Lawrence10",
+      "gender": "M",
+      "address": "Str. FIbro 35",
+      "hobbies": "Tenis"
+    },
+    {
+      "id": 4,
+      "firstName": "Jones",
+      "lastName": "Brones",
+      "gender": "M",
+      "address": "Str.Witness, Nr.5",
+      "hobbies": "American Football"
+    },
+    {
+      "id": 5,
+      "firstName": "Brightine",
+      "lastName": "Alexa",
+      "gender": "F",
+      "address": "Str.Oslo, Nr.75",
+      "hobbies": "SkateBoarding"
+    },
+    {
+      "firstName": "John",
+      "lastName": "Wick",
+      "gender": "M",
+      "address": "Str.Grozav Nr.5",
+      "hobbies": "Paintball",
+      "id": 6
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "iquest-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "homework2.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nagarro-Web-University/javascript-fundamentals-mihaix98.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nagarro-Web-University/javascript-fundamentals-mihaix98/issues"
+  },
+  "homepage": "https://github.com/Nagarro-Web-University/javascript-fundamentals-mihaix98#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
